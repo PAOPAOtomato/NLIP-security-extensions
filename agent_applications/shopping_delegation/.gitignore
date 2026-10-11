@@ -1,0 +1,4 @@
+# Mock identity-provider keys are generated locally on first login; never commit them.
+.mock_idp/
+# Payment ledger written while the agents run.
+runtime/

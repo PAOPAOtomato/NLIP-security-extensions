@@ -1,0 +1,37 @@
+# Shopping-delegation app: a user client, a shopping agent, and a payment agent.
+
+[entities.shopping]
+host = "127.0.0.1"
+port = 8021
+endpoint = "http://127.0.0.1:8021/nlip"
+model = "gpt-6-luna"
+# gpt-6-luna supports tool calling with reasoning only through the Responses API.
+use_responses_api = true
+
+[entities.shopping.security]
+ingress = []
+egress = []
+
+[entities.payment]
+host = "127.0.0.1"
+port = 8022
+endpoint = "http://127.0.0.1:8022/nlip"
+model = "gpt-6-luna"
+use_responses_api = true
+
+[entities.payment.security]
+ingress = []
+egress = []
+
+[auth]
+# "mock" signs ID tokens locally; Google login is added in milestone M3.
+mode = "mock"
+issuer = "https://mock-idp.shopping-delegation.local"
+audience = "shopping-delegation"
+key_dir = ".mock_idp"
+token_ttl_seconds = 3600
+
+[data]
+catalog = "data/catalog.json"
+accounts = "data/accounts.json"
+ledger = "runtime/ledger.jsonl"

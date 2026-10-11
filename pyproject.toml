@@ -22,6 +22,7 @@ agents = [
     "langchain-openai>=1.0",
 ]
 test = ["pytest>=8"]
+shopping = ["pyjwt[crypto]>=2.8"]
 
 [tool.setuptools.packages.find]
 include = [

@@ -1,0 +1,16 @@
+{
+  "alice": {
+    "sub": "mock-alice-001",
+    "email": "alice@example.com",
+    "name": "Alice Chen",
+    "card": "VISA ending 4242",
+    "shipping_address": "12 Maple St, Springfield, IL 62701"
+  },
+  "bob": {
+    "sub": "mock-bob-002",
+    "email": "bob@example.com",
+    "name": "Bob Martinez",
+    "card": "Mastercard ending 5454",
+    "shipping_address": "480 Harbor Ave, Portland, OR 97209"
+  }
+}

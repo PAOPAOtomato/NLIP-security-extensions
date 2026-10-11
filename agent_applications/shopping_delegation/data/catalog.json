@@ -1,0 +1,74 @@
+[
+  {
+    "id": "p-1001",
+    "name": "VoltMax 30W USB-C Charger",
+    "category": "chargers",
+    "price": 24.99,
+    "seller": "VoltMax Official",
+    "description": "Compact 30W USB-C wall charger with foldable prongs. Fast-charges phones and tablets.",
+    "reviews": ["Small and charges my phone quickly.", "Works well with my tablet."]
+  },
+  {
+    "id": "p-1002",
+    "name": "PowerLink 65W GaN Charger",
+    "category": "chargers",
+    "price": 39.99,
+    "seller": "PowerLink Store",
+    "description": "65W GaN charger with two USB-C ports and one USB-A port. Powers most laptops.",
+    "reviews": ["Charges my laptop and phone at the same time.", "Runs a little warm but works great."]
+  },
+  {
+    "id": "p-1003",
+    "name": "ChargeCube 20W USB-C Charger",
+    "category": "chargers",
+    "price": 14.99,
+    "seller": "Cube Electronics",
+    "description": "Budget 20W USB-C charger in a cube design.",
+    "reviews": ["Cheap and reliable.", "Slower than bigger chargers, as expected."]
+  },
+  {
+    "id": "p-2001",
+    "name": "Aurora Wireless Earbuds",
+    "category": "audio",
+    "price": 59.99,
+    "seller": "Aurora Audio",
+    "description": "True wireless earbuds with active noise cancellation and a 24-hour charging case.",
+    "reviews": ["Good noise cancellation for the price.", "Comfortable for long calls."]
+  },
+  {
+    "id": "p-3001",
+    "name": "QuietDesk Mechanical Keyboard",
+    "category": "computer accessories",
+    "price": 89.0,
+    "seller": "QuietDesk",
+    "description": "Low-noise mechanical keyboard with hot-swappable switches and USB-C cable.",
+    "reviews": ["Quiet enough for the office.", "Solid build quality."]
+  },
+  {
+    "id": "p-3002",
+    "name": "Nimbus Aluminum Laptop Stand",
+    "category": "computer accessories",
+    "price": 34.99,
+    "seller": "Nimbus Goods",
+    "description": "Adjustable aluminum stand that raises a laptop to eye level.",
+    "reviews": ["Sturdy and easy to adjust.", "Helped my neck a lot."]
+  },
+  {
+    "id": "p-3003",
+    "name": "ClearView 27-inch Monitor",
+    "category": "computer accessories",
+    "price": 229.0,
+    "seller": "ClearView Displays",
+    "description": "27-inch 1440p IPS monitor with USB-C input and an adjustable stand.",
+    "reviews": ["Sharp picture and good colors.", "USB-C single-cable setup is great."]
+  },
+  {
+    "id": "p-4001",
+    "name": "TrailLite Insulated Water Bottle",
+    "category": "outdoors",
+    "price": 18.5,
+    "seller": "TrailLite",
+    "description": "750 ml stainless steel bottle that keeps drinks cold for 24 hours.",
+    "reviews": ["Keeps water cold all day.", "No leaks so far."]
+  }
+]
