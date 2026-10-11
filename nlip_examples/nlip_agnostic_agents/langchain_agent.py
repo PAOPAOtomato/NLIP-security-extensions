@@ -15,24 +15,29 @@ class LangChainTestAgent:
 
     def __init__(
         self,
-        model: str = "gpt-5.6-luna",
+        model: str = "gpt-6-luna",
         base_url: str | None = None,
         api_key: str | None = None,
         system_prompt: str = "You are a helpful chatbot.",
         tools: Sequence[BaseTool] = (),
+        use_responses_api: bool | None = None,
     ) -> None:
         # Leaving base_url unset lets ChatOpenAI use the normal OpenAI endpoint.
         base_url = base_url or os.getenv("OPENAI_BASE_URL")
         api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise RuntimeError("Set OPENAI_API_KEY before running the agent.")
+        if use_responses_api is None:
+            use_responses_api = os.getenv("OPENAI_USE_RESPONSES_API") == "1"
 
         chat_model = ChatOpenAI(
             model=model,
             base_url=base_url,
             api_key=api_key,
             # LiteLLM commonly exposes the OpenAI chat-completions-compatible API.
-            use_responses_api=False,
+            # Set OPENAI_USE_RESPONSES_API=1 for OpenAI models that support tool
+            # calling with reasoning only through the Responses API.
+            use_responses_api=use_responses_api,
         )
         self._agent = create_agent(
             model=chat_model,
